@@ -1,0 +1,32 @@
+{
+  "name": "scarce.js",
+  "version": "0.0.1",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "node ."
+  },
+  "author": "_John_Scarce_",
+  "license": "MIT",
+  "dependencies": {
+    "8ball": "^1.0.6",
+    "cleverbot.io": "^1.0.4",
+    "discord.js": "^11.1.0",
+    "ffmpeg-binaries": "^3.2.2-3",
+    "google": "^2.1.0",
+    "google-translate-api": "^2.2.2",
+    "hubot-urban-dictionary": "^1.0.5",
+    "imdb-api": "^2.2.2",
+    "moment": "^2.17.1",
+    "node-url-shorter": "0.0.4",
+    "nodemon": "^1.11.0",
+    "opusscript": "0.0.2",
+    "pokedex": "^0.2.2",
+    "simple-youtube-api": "^2.1.0",
+    "sqlite": "^2.3.0",
+    "stock-fetcher": "0.0.7",
+    "unirest": "^0.5.1",
+    "yoda-speak": "^0.1.1",
+    "ytdl-core": "^0.10.0"
+  }
+}

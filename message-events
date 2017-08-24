@@ -1,0 +1,58 @@
+    var args = message.content.split(' ').slice(1);
+    var guild = message.guild;
+    var argresult = args.join(' ');
+    if (message.author.bot) return
+
+     let command = message.content.split(" ")[0];
+    command = command.slice(settings.prefix.length);
+    console.log(`${command} was done in the server: ${guild.name}`);
+
+if (command === "ping") {
+            const embed = new Discord.RichEmbed()
+  .setTitle('Pong!')
+  .setAuthor(`${message.author.username}`, `${message.author.displayAvatarURL}`)
+  .setColor(0x00AE86)
+  .setDescription(`The Trip Took ${message.createdTimestamp - Date.now()} ms`)
+  .setFooter('Nice text at the bottom', 'https://goo.gl/hkFYh0')
+  .setThumbnail('https://cdn.discordapp.com/avatars/204334590687445005/72b3119d31519bb564185a84409b86bd.jpg?size=1024')
+  .setTimestamp()
+
+message.channel.sendEmbed(
+  embed,
+  '',
+  { disableEveryone: true }
+  );
+} else
+
+if (command ==='setgame') {
+    if (!argresult) {
+      argresult = null;
+    }
+    client.user.setGame(argresult);
+  } else
+
+  if (command === 'setstatus') {
+    if (!argresult) {
+      argresult = 'online';
+    }
+    client.user.setStatus(argresult);
+  } else
+
+if (command === 'ban') {
+        if(hasRole(message.member, "Mod")) {   
+
+     guild.member(message.mentions.users.first()).ban().catch(error => console.log(error));
+        }
+     } else 
+if (command === 'avatar') {
+        message.reply(message.author.avatarURL)
+    } else
+    if(command === 'say'){
+    if (argresult.length === 1){ 
+        message.channel.sendMessage('You Didn\'t Define An Argument. Usage: ``say [message to say] ');
+ } else {
+     message.channel.sendMessage(argresult);
+ }
+    }
+})
+
