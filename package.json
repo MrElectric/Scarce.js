@@ -4,8 +4,8 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "test": "node ."
-  },
+     "start" : "node app.js"
+ },
   "author": "_John_Scarce_",
   "license": "MIT",
   "dependencies": {
